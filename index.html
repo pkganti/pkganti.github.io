@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phani Ganti</title>
+
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/jquery-ui.js"></script>
+
+  <script src="js/underscore.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home" class="page-scroll">HOME</a></li>
+                    <li><a href="#aboutme" class="page-scroll">ABOUT ME</a></li>
+
+                    <li><a href="#projects" class="page-scroll">PROJECTS</a></li>
+                    <li><a href="#projects" class="page-scroll">RESUME</a></li>
+                    <li><a href="#contact" class="page-scroll">CONTACT</a></li>
+                    <!-- <li><a href="PDF/Donn_resume.pdf" target="_blank">RESUME</a></li> -->
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+  <section id="home" data-type="background" data-speed="10">
+    <div class="homediv">
+    <article>
+      <div class="headname">
+        I'm Phani Ganti
+      </div>
+      <div class="scrolltext">
+
+
+      </div>
+
+
+
+      <div class="protitle">
+        A full stack web developer based in Sydney
+      </div>
+
+      <div class="quotation">
+        <p class="heading" hidden>
+          Keep the motivation to learn in every possible way you can. Embrace the failures as they make you learn more.
+        </p>
+        <p class="p1">
+
+        </p>
+
+
+      </div>
+      <div class="morebutton">
+        <a href="#aboutme">More About Me</a>
+      </div>
+    </article>
+    </div>
+  </section>
+
+  <section id="aboutme" data-type="background" data-speed="10">
+    <div class="aboutdiv">
+    <div class="aboutphani">Myself</div>
+    <div class="myaboutimage">
+      <img class="aboutpic" src="css/images/Phani2.jpg" alt="">
+
+    </div>
+      <div id="aboutdescription">
+        <p>Hi there, I am Phani a passionate developer.</p>
+          <p>Before being a web developer I worked for several multinational companies testing their software products for quality. I have the experience of working in Waterfall and Agile frameworks of Software Development Life Cycle.</p>
+          <p>I was always the internet savvy person and it is this interest which made me take up the coding and application development.
+          The General Assembly, Web Developer Immersive program gave me the push to take up the role of a Web developer and to explore new horizons.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="technologies">
+      <h2>Tech Stack</h2>
+
+    </div>
+
+  </section>
+
+  <section id="projects" data-type="background" data-speed="10">
+    <div class="projectdiv">
+    <article>Projects</article>
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="project1 col-xs-6 col-sm-3 imgWrap">
+          <a href="https://pkganti.github.io/tictactoe/"><img class="projects" src="css/images/tictactoe.jpg" alt=""></a>
+
+        </div>
+        <div class="project2 col-xs-6 col-sm-3">
+          <a href="https://pkganti.github.io/tictactoe/"><img class="projects" src="css/images/remoteassist.jpg" alt=""></a>
+
+        </div>
+        <div class="project3 col-xs-6 col-sm-3">
+          <a href="https://pkganti.github.io/tictactoe/"><img class="projects" src="css/images/palate.jpg" alt=""></a>
+
+        </div>
+        <div class="project4 col-xs-6 col-sm-3">
+          <a href="https://pkganti.github.io/tictactoe/"><img class="projects" src="css/images/trackpal.jpg" alt=""></a>
+
+        </div>
+      </div>
+      <div class="addTooltip">
+          <p id="tooltip">
+            Hover on the projects for details !!
+
+          </p>
+      </div>
+      <div class="resume">
+        <a href="documents/PhaniGanti-Resume.pdf"><img src="css/images/logos/CV.png" alt="" height="75px" width="150px" border-radius="1em"></a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact" data-type="background" data-speed="10">
+    <div class="contactdetails">
+      <p>Thanks for visiting my portfolio, i appreciate your time and would love to hear from you if there are any opportunities for Web Development. Please reach me on my mobile or mail me. Have a great day ahead !!</p>
+        <div id="contactlogos">
+          <a href="https://au.linkedin.com/in/phaniganti"><img class="contactlogo" src="css/images/linkedin.png" alt=""></a>
+          <a href="https://twitter.com/phaniganti"><img class="contactlogo" src="css/images/twitter.png" alt=""></a>
+          <a href="https://github.com/pkganti"><img class="contactlogo" src="css/images/github.png" alt=""></a>
+        </div>
+
+    </div>
+
+    <form action="mailto:ganti.phani@gmail.com?subject="contact"" method="post">
+      <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+      </div>
+      <div>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_mail" />
+      </div>
+      <div>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+      </div>
+
+      <div class="button">
+        <button type="submit">Send your message</button>
+      </div>
+
+  </form>
+
+  <footer class="footer">
+        <p>&copy; 2016 @phaniganti</p>
+  </footer>
+
+  </section>
+
+
+
+</body>
+</html>
