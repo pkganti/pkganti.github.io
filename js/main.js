@@ -59,29 +59,25 @@ var logos = [
 
 ];
 
-var displayTechnologies = function(){
-  for(var i=0; i<logos.length; i++){
-    var img = $('<img />').attr({'src':logos[i],
-                                  'class': "techimg", 'height': '50px', 'width': '75px'
-                                 });
-    $('.technologies').append(img);
+// var displayTechnologies = function(){
+//   _.each(logos, function(logo){
+//      var img = $('<img />').attr({'src':logo,
+//                                        'class': "techimg",
+//                                        'height': '50px',
+//                                        'width': '75px'
+//                                       });
+//      $('.alltechnologies').append(img);
+//   });
+//
+//  };
+//
+// displayTechnologies();
+
+(function slide(){
+  $('#clientSlider').animate({backgroundPosition : '-=2px'}, 20, 'linear', slide);
+})();
 
 
-
-  }
-};
-
-displayTechnologies();
-
-function bounce(){
-    $('.technologies > img').effect( "bounce", 300);
-}
-bounce();
-
-// $('.techimg').hover(function() {
-//         $(this).fadeOut();
-//         $(this).fadeIn();
-// });
 
 var typeText = function(p1, p2, speed){
   var myText = p1.text();
@@ -133,6 +129,62 @@ function hideTooltip()
     $("#tooltip").text("Hover on the projects for details !!");
     clearTimeout(tooltipTimeout);
     }
+
+
+
+//Mailer code goes here
+
+$(function() {
+
+	// Get the form.
+	var form = $('#ajax-contact');
+
+	// Get the messages div.
+	var formMessages = $('#form-messages');
+
+	// Set up an event listener for the contact form.
+	$(form).submit(function(e) {
+		// Stop the browser from submitting the form.
+		e.preventDefault();
+
+		// Serialize the form data.
+		var formData = $(form).serialize();
+
+		// Submit the form using AJAX.
+		$.ajax({
+			type: 'POST',
+			url: $(form).attr('action'),
+			data: formData
+		})
+		.done(function(response) {
+			// Make sure that the formMessages div has the 'success' class.
+			$(formMessages).removeClass('error');
+			$(formMessages).addClass('success');
+
+			// Set the message text.
+			$(formMessages).text(response);
+
+			// Clear the form.
+			$('#name').val('');
+			$('#email').val('');
+			$('#message').val('');
+		})
+		.fail(function(data) {
+			// Make sure that the formMessages div has the 'error' class.
+			$(formMessages).removeClass('success');
+			$(formMessages).addClass('error');
+
+			// Set the message text.
+			if (data.responseText !== '') {
+				$(formMessages).text(data.responseText);
+			} else {
+				$(formMessages).text('Oops! An error occured and your message could not be sent.');
+			}
+		});
+
+	});
+
+});
 
 
 });

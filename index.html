@@ -11,6 +11,7 @@
   <script src="js/main.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -92,8 +93,14 @@
 
     </div>
 
+
+
     <div class="technologies">
       <h2>Tech Stack</h2>
+      <div id="clientSlider" class="alltechnologies">
+
+
+      </div>
 
     </div>
 
@@ -150,7 +157,7 @@
 
     </div>
 
-    <form action="mailto:ganti.phani@gmail.com?subject="contact"" method="post">
+    <!-- <form role="form" id="contactForm">
       <div>
           <label for="name">Name:</label>
           <input type="text" id="name" name="user_name" />
@@ -165,10 +172,34 @@
       </div>
 
       <div class="button">
-        <button type="submit">Send your message</button>
-      </div>
+        <button type="submit" id="form-submit">Submit</button>
+      </div> -->
 
-  </form>
+    <!-- <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+
+  </form> -->
+  <div id="form-messages"></div>
+  <form id="ajax-contact" method="post" action="php/mailer.php">
+    <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+
+    <div class="field">
+        <button type="submit">Send</button>
+    </div>
+</form>
+
 
   <footer class="footer">
         <p>&copy; 2016 @phaniganti</p>

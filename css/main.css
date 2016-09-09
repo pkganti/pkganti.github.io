@@ -109,10 +109,9 @@ body {
   min-height: 800px;
   height: 800px;
   margin: 0 auto;
-  border-top: 40px solid #DBEEFF;
+  /*border-top: 40px solid #C7EBF3;*/
   width: 100%;
-  margin-bottom: 5px;
-  border-bottom: 1px;
+
   /*border-radius: 0.5em;*/
   max-width: 1920px;
 
@@ -123,8 +122,9 @@ body {
 
 .aboutphani {
 
-  color: darkolivegreen;
+  color: initial;
   font-family: fantasy;
+  text-decoration: underline;
   font-size: 30px;
   padding-top: 50px;
   text-align: center;
@@ -134,17 +134,22 @@ body {
 .aboutpic {
   margin-top: 50px;
   float: right;
-  margin-right: 150px;
-  margin-left: 50px;
-  width: 200px;
-  height: 200px;
+  margin-right: 180px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
 #aboutdescription {
   margin-left: 50px;
+  box-sizing: border-box;
+  background: gray;
+  opacity: 0.7;
+  padding: 8px;
+  border-radius: 1em;
+
   width: 600px;
-  color: darkolivegreen;
+  color: floralwhite;
   font-size:19px;
   font-family: fantasy;
   margin-top: 60px;
@@ -159,7 +164,7 @@ body {
 
 
 
-.technologies {
+/*.technologies {
   padding: 10px;
   margin-top: 200px;
   position: absolute;
@@ -171,23 +176,33 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-}
+}*/
 
 .technologies h2 {
-
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: fantasy;
+  text-decoration: underline;
   text-align: center;
-  color: darkslateblue;
-  /*font-family: 'Open Sans Condensed', sans-serif;*/
+  color: initial;
 }
 
-.technologies img {
+#clientSlider{
+  height: 110px;
+  width: 500px;
+  background: gray url(images/logos/logos.png) repeat 0 center;
+  opacity: 0.6;
+  margin: 0 auto;
+}
+
+/*.technologies img {
   padding: 5px;
   margin-right: 5px;
   height: 100px;
   width: 100px;
   border-radius: 1em;
 
-}
+}*/
 
 #projects {
   background: url(images/projects.jpg) 50% 0 repeat fixed;
@@ -195,10 +210,8 @@ body {
   min-height: 800px;
   height: 800px;
   margin: 0 auto;
+  /*border-top: 40px solid #C7EBF3;*/
   width: 100%;
-  margin-bottom: 5px;
-  border-bottom: 1px;
-  border-radius: 0.5em;
   max-width: 1920px;
   /*margin-bottom: 30px;*/
   position: relative;
