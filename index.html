@@ -45,7 +45,7 @@
   <section id="home" data-type="background" data-speed="10">
     <div class="homediv">
     <article>
-      <div class="headname">
+      <div class="headname" style="overflow-x: hidden; overflow-y: hidden; opacity: 1;">
         I'm Phani Ganti
       </div>
       <div class="scrolltext">
@@ -77,6 +77,10 @@
   </section>
 
   <section id="aboutme" data-type="background" data-speed="10">
+    <div class="aboutposter">
+
+
+    </div>
     <div class="aboutdiv">
     <div class="aboutphani">Myself</div>
     <div class="myaboutimage">
@@ -88,6 +92,19 @@
           <p>Before being a web developer I worked for several multinational companies testing their software products for quality. I have the experience of working in Waterfall and Agile frameworks of Software Development Life Cycle.</p>
           <p>I was always the internet savvy person and it is this interest which made me take up the coding and application development.
           The General Assembly, Web Developer Immersive program gave me the push to take up the role of a Web developer and to explore new horizons.
+          <br>
+          <br>
+
+          <b>Versioning tools:</b> Git, Github, Starteam <br>
+          <b>Programming:</b> Ruby, Javascript, jQuery, Core java, python <br>
+          <b>Design Patterns:</b> MVC <br>
+          <b>Libraries:</b> Underscore.js <br>
+          <b>Frontend Frameworks:</b> Backbone.js <br>
+          <b>Serverside:</b> Rails, Node.js <br>
+          <b>Interested in:</b> React.js, Angular.js <br>
+          <b>Test tools:</b> Cucumber, RSpec, Selenium <br>
+          <b>Others:</b> HP ALM, Heroku, Cloudinary, Linux
+
         </p>
       </div>
 
@@ -95,11 +112,13 @@
 
 
 
-    <div class="technologies">
-      <h2>Tech Stack</h2>
-      <div id="clientSlider" class="alltechnologies">
+    <div class="alltechnologies">
+      <!-- <h2>Tech Stack</h2> -->
+      <!-- <div id="clientSlider" class="alltechnologies">
 
 
+      </div> -->
+      <div class="technologies">
       </div>
 
     </div>
@@ -107,12 +126,19 @@
   </section>
 
   <section id="projects" data-type="background" data-speed="10">
-    <div class="projectdiv">
-    <article>Projects</article>
+    <div class="projectposter">
+      <p id="quote"></p>
+      <p id="author"></p>
 
     </div>
+    <!-- <div class="projectdiv">
+    <article>Projects</article>
+
+    </div> -->
 
     <div class="container-fluid">
+      <h3>Projects</h3>
+
       <div class="row">
 
         <div class="project1 col-xs-6 col-sm-3 imgWrap">
@@ -147,12 +173,16 @@
   </section>
 
   <section id="contact" data-type="background" data-speed="10">
+    <div class="contactposter">
+
+    </div>
     <div class="contactdetails">
       <p>Thanks for visiting my portfolio, i appreciate your time and would love to hear from you if there are any opportunities for Web Development. Please reach me on my mobile or mail me. Have a great day ahead !!</p>
         <div id="contactlogos">
           <a href="https://au.linkedin.com/in/phaniganti"><img class="contactlogo" src="css/images/linkedin.png" alt=""></a>
           <a href="https://twitter.com/phaniganti"><img class="contactlogo" src="css/images/twitter.png" alt=""></a>
           <a href="https://github.com/pkganti"><img class="contactlogo" src="css/images/github.png" alt=""></a>
+          <a href="#" class="mail"><img class="contactlogo" src="css/images/mail.png" alt=""></a>
         </div>
 
     </div>
@@ -178,7 +208,7 @@
     <!-- <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
 
   </form> -->
-  <div id="form-messages"></div>
+  <!-- <div id="form-messages"></div>
   <form id="ajax-contact" method="post" action="php/mailer.php">
     <div class="field">
         <label for="name">Name:</label>
@@ -198,7 +228,7 @@
     <div class="field">
         <button type="submit">Send</button>
     </div>
-</form>
+</form> -->
 
 
   <footer class="footer">

@@ -1,4 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import 'https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans+Condensed:300';
+@import 'https://fonts.googleapis.com/css?family=Oxygen';
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   /*background-image: url(images/backgroundpaper.jpg);*/
@@ -49,8 +51,21 @@ body {
   /*font-family: 'Open Sans Condensed', sans-serif;*/
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 3px 3px white;
+  /*text-shadow: 3px 3px white;*/
 }
+
+.headname {
+    -webkit-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -ms-transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    transition: text-shadow 1s linear;
+}
+.headname:hover,
+.headname.glow {
+    text-shadow: 0 0 15px red;
+}
+
 
 .scrolltext {
   color: darkblue;
@@ -73,7 +88,6 @@ body {
 }
 
 .quotation {
-  /*margin: 30px;*/
   height: 40px;
 
 }
@@ -81,7 +95,7 @@ body {
 
 .heading, .p1{
   font-size: 25px;
-  color: bisque;
+  color: azure;
 }
 
 
@@ -103,11 +117,20 @@ body {
      text-decoration: none;
 }
 
+/*.aboutposter {
+  background: url(images/aboutposter.jpg) 50% 0 repeat fixed;
+  min-height: 50px;
+  height: 50px;
+  margin: 0 auto;
+
+  width: 100%;
+}*/
+
 
 #aboutme {
   background: url(images/about.jpg) 50% 0 no-repeat fixed;
-  min-height: 800px;
-  height: 800px;
+  min-height: 850px;
+  height: 850px;
   margin: 0 auto;
   /*border-top: 40px solid #C7EBF3;*/
   width: 100%;
@@ -123,25 +146,25 @@ body {
 .aboutphani {
 
   color: initial;
-  font-family: fantasy;
-  text-decoration: underline;
+  font-family: 'Oxygen', sans-serif;
+  /*text-decoration: underline;*/
   font-size: 30px;
-  padding-top: 50px;
+  padding-top: 25px;
   text-align: center;
   left: 30%
 }
 
 .aboutpic {
-  margin-top: 50px;
+  margin-top: 70px;
   float: right;
-  margin-right: 180px;
+  margin-right: 200px;
   width: 250px;
   height: 250px;
   border-radius: 50%;
 }
 
 #aboutdescription {
-  margin-left: 50px;
+  margin-left: 100px;
   box-sizing: border-box;
   background: gray;
   opacity: 0.7;
@@ -164,51 +187,62 @@ body {
 
 
 
-/*.technologies {
+.technologies {
   padding: 10px;
   margin-top: 200px;
   position: absolute;
-  height: 300px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: lightblue;
+  background-color: white;
   top: 50%;
-  left: 50%;
+  left: 75%;
   transform: translate(-50%, -50%);
 
-}*/
-
-.technologies h2 {
-  margin-top: 50px;
-  font-size: 20px;
-  font-family: fantasy;
-  text-decoration: underline;
-  text-align: center;
-  color: initial;
 }
 
-#clientSlider{
-  height: 110px;
-  width: 500px;
-  background: gray url(images/logos/logos.png) repeat 0 center;
-  opacity: 0.6;
+.technologies img {
+  /*margin: 5px;*/
+  padding: 10px;
+}
+
+.technologies img:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+
+.projectposter {
+  /*background: url(images/sectionprojects.jpg) 50% 0 repeat fixed;*/
+  background: darkgreen;
+  min-height: 70px;
+  height: 70px;
   margin: 0 auto;
+  /*border-top: 40px solid #C7EBF3;*/
+  width: 100%;
 }
 
-/*.technologies img {
-  padding: 5px;
-  margin-right: 5px;
-  height: 100px;
-  width: 100px;
-  border-radius: 1em;
+#quote {
+  color: white;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
 
-}*/
+#author {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+
+}
 
 #projects {
-  background: url(images/projects.jpg) 50% 0 repeat fixed;
+  /*background: url(images/projects.jpg) 50% 0 repeat fixed;*/
+  /*background: black;*/
   /*opacity: 0.7;*/
-  min-height: 800px;
-  height: 800px;
+  min-height: 750px;
+  height: 750px;
   margin: 0 auto;
   /*border-top: 40px solid #C7EBF3;*/
   width: 100%;
@@ -217,26 +251,32 @@ body {
   position: relative;
 }
 
-#projects article {
-  color: black;
-
-  font-family: fantasy;
-  font-size: 40px;
-  height: 458px;
-  position: absolute;
+#projects h3 {
+  color: darkblue;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 30px;
+  /*height: 458px;*/
+  /*position: absolute;*/
   text-align: center;
   top: 10px;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .projects {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 1em;
 }
 
+
+.projects:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
 .row {
-  margin-top: 120px;
+  margin-top: 50px;
   margin-left: 110px;
 
 }
@@ -245,17 +285,21 @@ body {
 {
   margin-top: 50px;
   height: 200px;
-  width: 500px;
-  margin-left: 30%;
+  width: 600px;
+  margin-left: 25%;
   margin-right: 30%;
-  background-color: white;
-  opacity: 0.5;
+  background-color: ghostwhite;
+  /*opacity: 0.5;*/
   border-radius: 1em;
   padding: 5px;
 }
 
 #tooltip {
   text-align: center;
+  color: black;
+  font-size: 15px;
+  /*font-weight: bold;*/
+  font-style: italic;
 }
 
 .resume {
@@ -263,16 +307,24 @@ body {
   margin-top: 50px;
 }
 
+/*.contactposter {*/
+
+  /*background: black;
+  min-height: 100px;
+  height: 100px;
+  margin: 0 auto;*/
+  /*border-top: 40px solid #C7EBF3;*/
+  /*width: 100%;*/
+/*}*/
+
 #contact {
-  padding-top: 10%;
-  background: url(images/contact.jpg) 50% 0 no-repeat fixed;
-  min-height: 800px;
-  height: 800px;
+  /*padding-top: 30px;*/
+  /*background: url(images/contact.jpg) 50% 0 no-repeat fixed;*/
+  background: white;
+  min-height: 600px;
+  height: 600px;
   margin: 0 auto;
   width: 100%;
-  margin-bottom: 5px;
-  border-bottom: 1px;
-  border-radius: 0.5em;
   max-width: 1920px;
   position: relative;
 }
@@ -298,84 +350,30 @@ body {
   border-radius: 50%;
 }
 
+.contactlogo:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
 .contactdetails p {
+  margin-top: 10%;
   font-size: 20px;
-  color: blanchedalmond;
-
-}
-
-form {
-  /* Just to center the form on the page */
-  margin-left: 30%;
-  /* To see the outline of the form */
-  max-width: 100%;
-  padding: 1em;
-  /*border: 1px solid #CCC;
-  border-radius: 1em;*/
-}
-
-form div + div {
-    margin-top: 1em;
-}
-
-label {
-    /* To make sure that all labels have the same size and are properly aligned */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-    font-size: 20px;
-    margin: 8px;
-    color: blanchedalmond;
-}
-
-input, textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-    font: 1em sans-serif;
-
-    /* To give the same size to all text field */
-    width: 300px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    /* To harmonize the look & feel of text field border */
-    border: 1px solid #999;
-}
-
-input:focus, textarea:focus {
-    /* To give a little highlight on active elements */
-    border-color: #000;
-}
-
-textarea {
-    /* To properly align multiline text fields with their labels */
-    vertical-align: top;
-
-    /* To give enough room to type some text */
-    height: 5em;
-
-    /* To allow users to resize any textarea vertically
-       It does not work on all browsers */
-    resize: vertical;
-}
-
-.button {
-    /* To position the buttons to the same position of the text fields */
-    padding-left: 90px; /* same size as the label elements */
-}
-
-button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 14%;
+  font-family: 'Oxygen', sans-serif;
+  color: black;
 
 }
 
 .footer {
-  color: blanchedalmond;
-
+  color: black;
   position: absolute;
-  bottom: 20px;
+  bottom: 10%;
   margin-left: 45%;
   margin-right: 45%;
+}
+
+.footer p {
+  font-size: 15px;
+  font-weight: bold;
+
 }
