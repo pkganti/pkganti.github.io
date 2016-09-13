@@ -1,6 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 @import 'https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans+Condensed:300';
 @import 'https://fonts.googleapis.com/css?family=Oxygen';
+@import 'https://fonts.googleapis.com/css?family=Lobster';
+@import 'https://fonts.googleapis.com/css?family=Permanent+Marker';
+
+
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   /*background-image: url(images/backgroundpaper.jpg);*/
@@ -36,9 +40,11 @@ body {
   height: 458px;
   position: absolute;
   text-align: center;
-  top: 150px;
+  top: 280px;
   width: 100%;
 }
+
+
 
 .homediv {
 
@@ -127,10 +133,12 @@ body {
 }*/
 
 
+
+
 #aboutme {
   background: url(images/about.jpg) 50% 0 no-repeat fixed;
-  min-height: 850px;
-  height: 850px;
+  min-height: 700px;
+  height: 700px;
   margin: 0 auto;
   /*border-top: 40px solid #C7EBF3;*/
   width: 100%;
@@ -145,17 +153,18 @@ body {
 
 .aboutphani {
 
-  color: initial;
-  font-family: 'Oxygen', sans-serif;
+  color: black;
+  /*font-family: 'Permanent Marker', cursive;*/
   /*text-decoration: underline;*/
   font-size: 30px;
+  font-weight: bold;
   padding-top: 25px;
   text-align: center;
   left: 30%
 }
 
 .aboutpic {
-  margin-top: 70px;
+  margin-top: 60px;
   float: right;
   margin-right: 200px;
   width: 250px;
@@ -166,7 +175,7 @@ body {
 #aboutdescription {
   margin-left: 100px;
   box-sizing: border-box;
-  background: gray;
+  background: black;
   opacity: 0.7;
   padding: 8px;
   border-radius: 1em;
@@ -174,7 +183,7 @@ body {
   width: 600px;
   color: floralwhite;
   font-size:19px;
-  font-family: fantasy;
+  /*font-family: fantasy;*/
   margin-top: 60px;
   text-align: justify;
 }
@@ -189,7 +198,7 @@ body {
 
 .technologies {
   padding: 10px;
-  margin-top: 200px;
+  margin-top: 150px;
   position: absolute;
   background-color: white;
   top: 50%;
@@ -212,24 +221,38 @@ body {
 
 .projectposter {
   /*background: url(images/sectionprojects.jpg) 50% 0 repeat fixed;*/
-  background: darkgreen;
-  min-height: 70px;
-  height: 70px;
+  background: black;
+  min-height: 200px;
+  height: 200px;
   margin: 0 auto;
   /*border-top: 40px solid #C7EBF3;*/
   width: 100%;
 }
 
+#displayheadposter {
+  margin-top: 10px;
+  font-family: 'Lobster', cursive;
+  padding: 10px;
+  font-size: 19px;
+  color: honeydew;
+  text-align: center;
+
+}
+
 #quote {
-  color: white;
+  margin-top: 20px;
+  padding: 20px;
+  color: honeydew;
   font-size: 25px;
-  font-style: italic;
-  font-weight: bold;
+  /*font-style: italic;*/
+  font-family: 'Lobster', cursive;
+  /*font-weight: bold;*/
   text-align: center;
 }
 
 #author {
-  color: white;
+  padding: 20px;
+  color: honeydew;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -239,10 +262,10 @@ body {
 
 #projects {
   /*background: url(images/projects.jpg) 50% 0 repeat fixed;*/
-  /*background: black;*/
-  /*opacity: 0.7;*/
-  min-height: 750px;
-  height: 750px;
+  /*background: #C7EBF3;*/
+  opacity: 0.7;
+  min-height: 800px;
+  height: 800px;
   margin: 0 auto;
   /*border-top: 40px solid #C7EBF3;*/
   width: 100%;
@@ -252,11 +275,13 @@ body {
 }
 
 #projects h3 {
-  color: darkblue;
-  font-family: 'Oxygen', sans-serif;
+  color: black;
+  /*font-family: 'Permanent Marker', cursive;*/
   font-size: 30px;
   /*height: 458px;*/
   /*position: absolute;*/
+  font-weight: bold;
+
   text-align: center;
   top: 10px;
   /*width: 100%;*/
@@ -288,7 +313,7 @@ body {
   width: 600px;
   margin-left: 25%;
   margin-right: 30%;
-  background-color: ghostwhite;
+  /*background-color: ghostwhite;*/
   /*opacity: 0.5;*/
   border-radius: 1em;
   padding: 5px;
@@ -297,30 +322,35 @@ body {
 #tooltip {
   text-align: center;
   color: black;
-  font-size: 15px;
+  font-size: 19px;
   /*font-weight: bold;*/
-  font-style: italic;
+  /*font-style: italic;*/
 }
 
 .resume {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
-/*.contactposter {*/
+.resume img {
+  height: 50px;
+  width: 100px;
+}
 
-  /*background: black;
-  min-height: 100px;
-  height: 100px;
-  margin: 0 auto;*/
+.contactposter {
+  background: url(images/contactposter.jpg) 50% 0 repeat fixed;
+  /*background: black;*/
+  min-height: 200px;
+  height: 200px;
+  margin: 0 auto;
   /*border-top: 40px solid #C7EBF3;*/
-  /*width: 100%;*/
-/*}*/
+  width: 100%;
+}
 
 #contact {
   /*padding-top: 30px;*/
   /*background: url(images/contact.jpg) 50% 0 no-repeat fixed;*/
-  background: white;
+  background: black;
   min-height: 600px;
   height: 600px;
   margin: 0 auto;
@@ -360,12 +390,12 @@ body {
   margin-top: 10%;
   font-size: 20px;
   font-family: 'Oxygen', sans-serif;
-  color: black;
+  color: white;
 
 }
 
 .footer {
-  color: black;
+  color: white;
   position: absolute;
   bottom: 10%;
   margin-left: 45%;

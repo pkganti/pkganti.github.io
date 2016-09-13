@@ -38,6 +38,19 @@ setInterval(function(){
     glow.hasClass('glow') ? glow.removeClass('glow') : glow.addClass('glow');
 }, 1000);
 
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 450) {
+    $('#aboutdescription').fadeIn();
+  } else {
+    $('#aboutdescription').fadeOut();
+  }
+});
+
+
+
+
 var logos = [
   "css/images/logos/html5.png",
   "css/images/logos/jquery.png",
@@ -74,14 +87,16 @@ var displayTechnologies = function(){
 
  };
 
-displayTechnologies();
+ displayTechnologies();
 
 
-// Sliding the banner functionality
 
-// (function slide(){
-//   $('#clientSlider').animate({backgroundPosition : '-=2px'}, 20, 'linear', slide);
-// })();
+            $(".aboutpic").hover(function(){
+               $(".aboutpic").effect( "bounce", {times:1}, 1000 );
+            });
+
+
+
 
 
 
@@ -107,6 +122,7 @@ var displayQuote = function(){
 };
 
 displayQuote();
+
 
 
 
@@ -175,8 +191,7 @@ $.ajax({
     $("#author").text("- " + data.author);
                           },
     error: function(err) { alert(err); },
-    // beforeSend: function(xhr) {
-    // xhr.setRequestHeader("X-Mashape-Key", "Sf3DgiShucmshwKMPYkORgRld8iqp1cQhg8jsnoiiBAa9bFo6e");} // Enter here your Mashape key
+
     });
 }
 
