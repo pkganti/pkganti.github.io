@@ -251,13 +251,11 @@ body {
 }
 
 #author {
-  padding: 20px;
+  /*padding: 20px;*/
   color: honeydew;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-
-
 }
 
 #projects {
