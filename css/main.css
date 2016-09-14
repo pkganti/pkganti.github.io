@@ -408,6 +408,10 @@ body {
 
 }
 
+.contactnumber {
+    right: 10px;
+}
+
 .footer {
   color: white;
   position: absolute;
