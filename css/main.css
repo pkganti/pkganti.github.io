@@ -22,6 +22,8 @@ body {
   color: black;
 }
 
+
+
 #home {
   background: url(images/home.jpg) 50% 0 repeat fixed;
   min-height: 800px;
@@ -123,22 +125,36 @@ body {
      text-decoration: none;
 }
 
-/*.aboutposter {
-  background: url(images/aboutposter.jpg) 50% 0 repeat fixed;
-  min-height: 50px;
-  height: 50px;
+.aboutposter {
+  /*background: url(images/aboutposter.jpg) 50% 0 repeat fixed;*/
+  background: grey;
+  min-height: 100px;
+  height: 100px;
   margin: 0 auto;
-
   width: 100%;
-}*/
+}
+
+.aboutposter img {
+  height: 50px;
+  width: 50px;
+  margin-left: 210px;
+  margin-top: 20px;
+  border-radius: 1em;
+}
+
+.aboutposter img:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
 
 
 
 
 #aboutme {
   background: url(images/about.jpg) 50% 0 no-repeat fixed;
-  min-height: 700px;
-  height: 700px;
+  min-height: 800px;
+  height: 800px;
   margin: 0 auto;
   /*border-top: 40px solid #C7EBF3;*/
   width: 100%;

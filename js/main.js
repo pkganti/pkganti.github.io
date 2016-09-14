@@ -89,11 +89,30 @@ var displayTechnologies = function(){
 
  displayTechnologies();
 
+var hobbies = [
+  "css/images/books.png",
+  "css/images/cricket.png",
+  "css/images/joystick.png",
+  "css/images/driving.png",
+];
+
+ var displayHobbies = function(){
+   _.each(hobbies, function(logo){
+      var img = $('<img />').attr({'src':logo,
+                                        'class': "hobbyimg"
+
+                                       });
+      $('.aboutposter').append(img);
+   });
+
+  };
+
+  displayHobbies();
 
 
-            $(".aboutpic").hover(function(){
-               $(".aboutpic").effect( "bounce", {times:1}, 1000 );
-            });
+$(".aboutpic").hover(function(){
+   $(".aboutpic").effect( "bounce", {times:1}, 1000 );
+});
 
 
 
@@ -179,7 +198,7 @@ var quoteskey = "mashape-key=Sf3DgiShucmshwKMPYkORgRld8iqp1cQhg8jsnoiiBAa9bFo6e"
 
 
 
-setInterval(getQuotes, 30000);
+setInterval(getQuotes, 50000);
 function getQuotes() {
 $.ajax({
   url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=famous?'+quoteskey,
