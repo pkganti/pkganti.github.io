@@ -2,247 +2,204 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap-min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+
+  <!-- Custom Fonts -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
   <title>Phani Ganti</title>
-
-  <script src="js/jquery.js" charset="utf-8"></script>
-  <script src="js/jquery-ui.js"></script>
-
-  <script src="js/underscore.js" charset="utf-8"></script>
-  <script src="js/main.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#home" class="page-scroll">HOME</a></li>
-                    <li><a href="#aboutme" class="page-scroll">ABOUT ME</a></li>
-
-                    <li><a href="#projects" class="page-scroll">PROJECTS</a></li>
-                    <li><a href="#projects" class="page-scroll">RESUME</a></li>
-                    <li><a href="#contact" class="page-scroll">CONTACT</a></li>
-                    <li><a href="#" class="page-scroll contactnumber">+61470455125</a></li>
-                </ul>
-
-            </div>
-        </div>
+  <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Phani Ganti</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Projects</a>
+            </li>
+            <li>
+                <a href="#skills" onclick=$("#menu-close").click();>Skills</a>
+            </li>
+            <li>
+                <a href="#footer" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
     </nav>
 
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1 class="headname">Phani Ganti</h1>
+            <h3 class="tailname">Full Stack Web Developer</h3>
+            <h3 class="aboutphrases"></h3>
+            
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
 
-  <section id="home" data-type="background" data-speed="10">
-    <div class="homediv">
-    <article>
-      <div class="headname" style="overflow-x: hidden; overflow-y: hidden; opacity: 1;">
-        I'm Phani Ganti
-      </div>
-      <div class="scrolltext">
-
-
-      </div>
-
-
-
-      <div class="protitle">
-        A full stack web developer based in Sydney
-      </div>
-
-      <div class="quotation">
-        <p class="heading" hidden>
-          Keep the motivation to learn in every possible way you can. Embrace the failures as they make you learn more.
-        </p>
-        <p class="p1">
-
-        </p>
-
-
-
-      </div>
-      <div class="morebutton">
-        <a href="#aboutme">More About Me</a>
-      </div>
-    </article>
-    </div>
-  </section>
-
-  <section id="aboutme" data-type="background" data-speed="10">
-    <div class="aboutposter">
+    <!-- About -->
+   <section id="about" class="about">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-12 text-center">
+                   <h2>Fun loving, Cheerful, Always seeking new technologies, A passionate developer... that's about me !</h2>
+                   <p class="lead">Before being a web developer I worked for several multinational companies testing software products for quality. I am a Certified Agile Practitioner from PMI and have experience in Waterfall / Agile models of Software Development</p>
+                   <p class="lead"><strong>My interests include</strong></p>
+                   <div class="interests"></div>
+               </div>
+           </div>
+           <!-- /.row -->
+       </div>
+       <!-- /.container -->
+   </section>
 
 
+   <!-- Portfolio -->
+   <section id="portfolio" class="portfolio">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-10 col-lg-offset-1 text-center">
+                   <h2>My Work</h2>
+                   <hr class="small">
+                   <div class="row">
+                       <div class="col-md-6">
+                           <div class="portfolio-item">
+                               <a href="https://github.com/pkganti/tictactoe" target="_blank">
+                                   <img class="img-portfolio img-responsive" src="img/tictactoe.jpg">
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="portfolio-item">
+                               <a href="https://github.com/pkganti/rAssist" target="_blank">
+                                   <img class="img-portfolio img-responsive" src="img/remoteAssist.png">
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="portfolio-item">
+                               <a href="https://github.com/pkganti/project2" target="_blank">
+                                   <img class="img-portfolio img-responsive" src="img/palate.jpg">
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="portfolio-item">
+                               <a href="https://github.com/pkganti/trackpal" target="_blank">
+                                   <img class="img-portfolio img-responsive" src="img/trackpal.jpg">
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- /.row (nested) -->
 
-    </div>
-    <div class="aboutdiv">
-    <!-- <div class="aboutphani">Myself</div> -->
-    <div class="myaboutimage">
-      <img class="aboutpic" src="css/images/Phani2.jpg" alt="">
+               </div>
+               <!-- /.col-lg-10 -->
+           </div>
+           <!-- /.row -->
+       </div>
+       <!-- /.container -->
+   </section>
 
-    </div>
-      <div id="aboutdescription">
-        <p>Hi there, I am Phani a passionate developer.</p>
-          <p>Before being a web developer I worked for several multinational companies testing their software products for quality. I have the experience of working in Waterfall and Agile frameworks of Software Development Life Cycle.</p>
-          <p>I was always the internet savvy person and it is this interest which made me take up the coding and application development.
-          The General Assembly, Web Developer Immersive program gave me the push to take up the role of a Web developer and to explore new horizons.
-          <br>
-          <br>
-
-          <b>Versioning tools:&nbsp</b> Git, Github, Starteam <br>
-          <b>Programming:&nbsp</b> Ruby, Javascript, jQuery, Core java, python <br>
+   <!-- Skills -->
+   <section id="skills" class="skills">
+       <div class="container">
+           <div class="row">
+             <div class="col-lg-10 col-lg-offset-1 text-center">
+                 <h2>Skills</h2>
+               <div class="col-lg-6 text-left">
+                 <p>
+                   <b>Versioning tools:&nbsp</b> Git, Github, Starteam <br>
+          <b>Programming:&nbsp</b> Ruby, Javascript, jQuery, Core java, Python <br>
           <b>Design Patterns:&nbsp</b> MVC <br>
           <b>Libraries:&nbsp</b> Underscore.js <br>
           <b>Frontend Frameworks:&nbsp</b> Backbone.js <br>
           <b>Serverside:&nbsp</b> Rails, Node.js <br>
-          <b>Learning:&nbsp</b> React.js, Angular.js <br>
+          <b>Interests:&nbsp</b> React.js, Angular.js, Rails<br>
           <b>Test tools:&nbsp</b> Cucumber, RSpec, Selenium <br>
           <b>Others:&nbsp</b> HP ALM, Heroku, Cloudinary, Linux
 
-        </p>
+                 </p>
+               </div>
+               <!-- /.col-lg-3  -->
+               <div class="col-lg-6 technologies">
+                  <h3></h3>
+               </div>
+               <!-- <div class="col-lg-3 image-caption">
+                 <h3></h3>
+
+               </div> -->
+
+               <!-- /.col-lg-10 technologies -->
+
+               </div>
+              <!-- /.col-lg-10 -->
+          </div>
+          <!-- /.row -->
       </div>
-
-    </div>
-
-
-
-    <div class="alltechnologies">
-      <!-- <h2>Tech Stack</h2> -->
-      <!-- <div id="clientSlider" class="alltechnologies">
-
-
-      </div> -->
-      <div class="technologies">
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="projects" data-type="background" data-speed="10">
-    <div class="projectposter">
-      <p id="displayheadposter">Few famous and movie quotes here !!!</pss>
-      <p id="quote"></p>
-      <p id="author"></p>
-
-    </div>
-    <!-- <div class="projectdiv">
-    <article>Projects</article>
-
-    </div> -->
-
-    <div class="container-fluid">
-      <h3>Projects</h3>
-
-      <div class="row">
-
-        <div class="project1 col-xs-6 col-sm-3 imgWrap">
-          <a href="https://pkganti.github.io/tictactoe/"><img class="projects" src="css/images/tictactoe.jpg" alt=""></a>
-
-        </div>
-        <div class="project2 col-xs-6 col-sm-3">
-          <a href="https://remoteassist.herokuapp.com"><img class="projects" src="css/images/remoteAssist.png" alt=""></a>
-
-        </div>
-        <div class="project3 col-xs-6 col-sm-3">
-          <a href="https://wdi15project2.herokuapp.com"><img class="projects" src="css/images/palate.jpg" alt=""></a>
-
-        </div>
-        <div class="project4 col-xs-6 col-sm-3">
-          <a href="https://trackpal.herokuapp.com"><img class="projects" src="css/images/trackpal.jpg" alt=""></a>
-
-        </div>
-      </div>
-      <div class="addTooltip">
-          <p id="tooltip">
-            Hover on the projects for details !!
-
-          </p>
-      </div>
-      <div class="resume">
-        <a href="documents/PhaniGanti-Resume.pdf"><img src="css/images/logos/CV.png" alt="" height="75px" width="150px" border-radius="1em"></a>
-
-      </div>
-    </div>
-
-  </section>
-
-  <section id="contact" data-type="background" data-speed="10">
-    <div class="contactposter">
-
-    </div>
-    <div class="contactdetails">
-      <p>Thanks for visiting my portfolio, i appreciate your time and would love to hear from you if there are any opportunities for Web Development. Please reach me on my mobile or mail me. Have a great day ahead !!</p>
-
-        <div id="contactlogos">
-          <a href="https://au.linkedin.com/in/phaniganti"><img class="contactlogo" src="css/images/linkedin.png" alt=""></a>
-          <a href="https://twitter.com/phaniganti"><img class="contactlogo" src="css/images/twitter.png" alt=""></a>
-          <a href="https://github.com/pkganti"><img class="contactlogo" src="css/images/github.png" alt=""></a>
-          <a href="#" class="mail"><img class="contactlogo" src="css/images/mail.png" alt=""></a>
-        </div>
-
-
-    </div>
-
-    <!-- <form role="form" id="contactForm">
-      <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name" />
-      </div>
-      <div>
-          <label for="mail">E-mail:</label>
-          <input type="email" id="mail" name="user_mail" />
-      </div>
-      <div>
-          <label for="msg">Message:</label>
-          <textarea id="msg" name="user_message"></textarea>
-      </div>
-
-      <div class="button">
-        <button type="submit" id="form-submit">Submit</button>
-      </div> -->
-
-    <!-- <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
-
-  </form> -->
-  <!-- <div id="form-messages"></div>
-  <form id="ajax-contact" method="post" action="php/mailer.php">
-    <div class="field">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-
-    <div class="field">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="field">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-
-    <div class="field">
-        <button type="submit">Send</button>
-    </div>
-</form> -->
-
-
-  <footer class="footer">
-        <p>&copy; 2016 @phaniganti</p>
-  </footer>
-
+      <!-- /.container -->
   </section>
 
 
+  <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Contact</strong>
+                    </h4>
 
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i><a href="tel:+61470455125">(+61)470455125 </a></li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:ganti.phani@gmail.com">ganti.phani@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                          <a href="https://au.linkedin.com/in/phaniganti" target="_blank"><img class="contactlogo" src="img/linkedin.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/phaniganti" target="_blank"><img class="contactlogo" src="img/twitter.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/pkganti" target="_blank"><img class="contactlogo" src="img/github1.png" alt=""></a>
+                        </li>
+
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">&copy; Phani Ganti 2016</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+
+
+    <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <script src="js/underscore.js" charset="utf-8"></script>
+        <script src="js/underscore.string.min.js" charset="utf-8"></script>
+        <script src="js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>
